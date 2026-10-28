@@ -1,4 +1,5 @@
 import { motion, useScroll, useSpring } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Why from "./components/Why";
@@ -41,6 +42,7 @@ export default function App() {
         <FinalCTA />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
